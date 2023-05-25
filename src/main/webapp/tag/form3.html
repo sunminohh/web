@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>폼 태그</title>
+</head>
+<body>
+	<h1>폼 입력양식 연습</h1>
+	
+	<form action="register.jsp method=""post">
+		<div>
+			<label>이름</label>
+			<input type="text" method="username" />
+		</div>
+		<div>
+			<label>아이디</label>
+			<input type="text" method="userId" value="hong" readonly="readonly" />
+		</div>
+		<div>
+			<label>보유 기술</label><br />
+			<input type="checkbox" method="skill" value="java" /> 자바
+			<input type="checkbox" method="skill" value="c" disabled="disabled" /> c
+			<input type="checkbox" method="skill" value="c++" disabled="disabled" /> c++
+			<input type="checkbox" method="skill" value="파이썬" /> 파이썬
+			<input type="checkbox" method="skill" value="러스트" /> 러스트
+		</div>
+		<!-- type="button"인 버튼은 클릭해도 폼입력값이 제출되지 않는다. -->
+		<button type="button">전송</button> 
+		<!-- 아래의 3가지 버튼은 클릭하면 폼입력값이 제출된다. -->
+		<button type="submit">전송</button>  
+		<button>전송</button> 
+		<input type="submit value="전송"> 
+	</form>
+	<!-- 폼의 바깥에 위치한 버튼은 폼입력값을 제출할 수 없다. -->
+	<input type="submit" value="전송"> 
+</html>
+
+
+
+
+
+
+
+
